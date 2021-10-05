@@ -1,0 +1,1 @@
+{"py/object": "Dominio.perro.Perro", "nombre": "pelusa", "edad": 7, "raza": "Pug", "codigoPer": {"py/object": "uuid.UUID", "hex": "0984af90f60c4bbfbe86cff6bd40f1cd"}, "precio": "300000", "colorPelage": "gris"}
