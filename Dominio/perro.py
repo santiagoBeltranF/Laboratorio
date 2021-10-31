@@ -7,7 +7,7 @@ class Perro :
         self.nombre = nombre
         self.edad = edad
         self.raza = raza
-        self.codigoPer = uuid.uuid4()
+        self.codigoPer = str(uuid.uuid4())
         self.precio = precio
         self.colorPelage=colorPelage
 

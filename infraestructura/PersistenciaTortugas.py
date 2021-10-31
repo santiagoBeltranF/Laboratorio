@@ -4,6 +4,7 @@ from Dominio.tortuga import Tortuga
 import jsonpickle
 
 class PersistenciaTortugas():
+
     def connect_tortugas(self):
         self.con = sqlite3.connect("la_tienda_de_santiago")
         self.__crear_tabla_tortugas()
@@ -28,11 +29,6 @@ class PersistenciaTortugas():
                               tortuga.raza,tortuga.precio,tortuga.tipoSangre
                               ))
         self.con.commit()
-
-
-
-
-
 
     @classmethod
     def save_json_tortuga(cls, tortuga):

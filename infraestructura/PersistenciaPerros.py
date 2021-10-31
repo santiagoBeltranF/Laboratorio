@@ -45,3 +45,11 @@ class PersistenciaPerros():
         perro = jsonpickle.decode(json_gui)
         text_open.close()
         return perro
+
+    @classmethod
+    def load_json(cls, file_name):
+        text_open = open("files/" + file_name, mode='r')
+        json_gui = text_open.readline()
+        mascota = jsonpickle.decode(json_gui)
+        text_open.close()
+        return mascota

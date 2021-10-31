@@ -1,12 +1,12 @@
 import uuid
 class Mascota:
 
-    def __init__(self, nombre, edad, raza, precio):
+    def __init__(self, nombre, telefono, categoria):
         self.nombre = nombre
-        self.edad = edad
-        self.raza = raza
+        self.telefono = telefono
+        self.categoria = categoria
         self.id = uuid.uuid4()
-        self.precio = precio
+
 
     def __str__(self):
         return f"{self.nombre}--{self.edad}--{self.raza}--{self.id}--{self.precio}"
